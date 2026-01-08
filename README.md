@@ -79,6 +79,7 @@ The easiest way to run AIFocus is using Docker Compose. Make sure you have [Dock
     ```bash
     docker-compose up --build
     ```
+    > **Note:** If your MongoDB is running locally on your host machine (not in Docker), use `mongodb://host.docker.internal:27017/aifocus` in your `backend/.env` to allow the container to connect to your host.
 3.  **Access the Application:**
     -   Frontend: [http://localhost](http://localhost)
     -   Backend API: [http://localhost:5000/api](http://localhost:5000/api)
