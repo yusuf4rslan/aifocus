@@ -22,7 +22,7 @@ The project is built using a modern and robust technology stack:
 *   **Frontend:** ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white) ![Axios](https://img.shields.io/badge/axios-671ddf?style=flat-square&logo=axios&logoColor=white)
 *   **Backend:** ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB)
 *   **Database:** ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)
-*   **Security & Dev:** ![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white)
+*   **DevOps & Tools:** ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white)
 
 ---
 
@@ -67,6 +67,21 @@ npm install
 ### Running the App
 *   **Backend:** `npm run dev` (inside /backend folder)
 *   **Frontend:** `npm run dev` (inside /frontend folder)
+
+---
+
+## 🐳 Docker Setup (Recommended)
+
+The easiest way to run AIFocus is using Docker Compose. Make sure you have [Docker](https://www.docker.com/get-started) installed.
+
+1.  **Configure Environment Variables:** Ensure your `.env` files are set up in `/backend` and `/frontend`.
+2.  **Run the whole platform:**
+    ```bash
+    docker-compose up --build
+    ```
+3.  **Access the Application:**
+    -   Frontend: [http://localhost](http://localhost)
+    -   Backend API: [http://localhost:5000/api](http://localhost:5000/api)
 
 
 ## 📂 Project Architecture

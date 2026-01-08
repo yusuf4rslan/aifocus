@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  # BACKEND SERVİSİ
+  backend:
+    build: ./backend
+    container_name: aifocus-backend
+    ports:
+      - "5000:5000" # Bilgisayarındaki 5000 portunu kutunun içindeki 5000'e bağlar
+    env_file:
+      - ./backend/.env # Çevresel değişkenleri buradan okur
+    restart: always
+
+  # FRONTEND SERVİSİ
+  frontend:
+    build: ./frontend
+    container_name: aifocus-frontend
+    ports:
+      - "80:80" # Siteye artık http://localhost adresinden doğrudan girebileceksin
+    restart: always
+    depends_on:
+      - backend # Backend açılmadan frontend'i tam çalıştırma der
